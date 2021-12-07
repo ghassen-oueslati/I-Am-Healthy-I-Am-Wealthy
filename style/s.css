@@ -1,0 +1,138 @@
+
+/* -------------- Filterage -------------- */
+
+.list{
+    list-style: none;
+    display: inline;
+    position: relative;
+    top: 20px;
+    
+}
+.filtrage .list button  {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: var(--b);
+    font-weight: bold;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+    background-color: var(--S);
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:  726px){
+    .filtrage .list button{
+        margin-top: 8px;
+        display: block;
+    }
+    
+       }
+
+/* -------------- End Filterage -------------- */
+
+/* -------------- Gallery -------------- */
+.equipement {
+    margin: 50px 30px;
+}
+.figure2 img {
+    width: 420px;
+}
+.figure2 {
+    display: inline-block;
+    width: 460px;
+    padding: 20px;
+    position: relative;
+}
+.figure2 .img .p {
+    position: relative;
+    transition: opacity 1s;
+}
+.figure2 .img .d {
+    position: absolute;
+}
+.figure2 .img .p:hover{
+    opacity: 0;
+}
+.carac {
+    margin-top: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carac p {
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    font-weight: bold;
+
+}
+.figure2 figcaption a { 
+    display: block;
+    width: 100%;
+    color: black;
+    padding: 10px 50px ;
+    border: 1px black solid;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+    margin-top: 15px;
+    background-color: transparent;
+} 
+.figure2 .purchase-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+    border: 1px black solid;
+    margin-top: 15px;
+    padding: 10px 0 10px;
+
+}
+.figure2 .purchase-info input{
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+}
+.cart1{
+    position: relative;
+    top: 4px;
+    margin-left: 30%;
+}
+
+.figure2 .purchase-info p{
+    display: inline-block;
+    font-size: 22px;
+    padding: 2px;
+}
+.figure2 figcaption input:hover,.figure2 figcaption a:hover{
+    text-decoration: underline;
+}
+.figure2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0px;
+    background:#D1C0A8;
+    transition: all 1s;
+}
+.figure2:hover::after{
+    width: 480px;
+}
+.equipement {
+    display: inline-block;
+    width: 440px;
+}
+.equipements {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* -------------- End Gallery -------------- */
+
